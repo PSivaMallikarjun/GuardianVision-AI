@@ -1,0 +1,8 @@
+{
+  "name": "GuardianVision AI - Emergency Response & Insurance Nexus",
+  "description": "A real-time AI-powered CCTV monitoring system designed to detect accidents, coordinate emergency medical services, and streamline insurance claims through automated license plate recognition and damage assessment.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

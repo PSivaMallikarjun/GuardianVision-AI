@@ -1,0 +1,28 @@
+[project]
+name = "accidentguard_ai"
+version = "0.1.0"
+description = "accidentguard_ai using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[file-processing,litellm,tools]>=1.15.22,<2.0.0",
+]
+
+[project.scripts]
+accidentguard_ai = "accidentguard_ai.main:run"
+run_crew = "accidentguard_ai.main:run"
+train = "accidentguard_ai.main:train"
+replay = "accidentguard_ai.main:replay"
+test = "accidentguard_ai.main:test"
+run_with_trigger = "accidentguard_ai.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "9734d7b3-64f9-42c0-9bd1-428fab570257"
+
+[tool.uv]
+override-dependencies = ["litellm<=1.82.6"]
